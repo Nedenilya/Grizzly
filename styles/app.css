@@ -38,3 +38,31 @@ input[type=text]:focus{
 	border-color: darkblue;
 	transition: all 0.5s;
 }
+
+
+
+
+
+/*//////////////////////////////////////--=== Cookies styles ===--////////////////////////////////////////*/
+
+#cookies{
+	margin-top:0px;
+	margin-left:0px;
+	background-color:#FF0103;
+	position:fixed;
+	width:100%;
+/*	// height:40px;*/
+	opacity:0.9;
+	z-index:999;
+	color:#FFFFFF;
+	padding-top:5px;
+	padding-bottom:10px;
+	text-align:center;
+	}
+
+.cookieLinks{
+	color:#FFFFFF;
+}
+.cookieLinks:hover{
+	color:#000000;
+}
