@@ -1,47 +1,11 @@
+*{
+	box-sizing: border-box;
+}
+
 body{
 	margin: 0;
 	padding: 0;
 }
-
-.content{
-	width: 1000px;
-	height: 100%;
-	margin: 0 auto;
-	border-left: 1px solid black;
-	border-right: 1px solid black;
-}
-
-.box1{
-	width: 300px;
-	hright: 200px;
-	margin: 0 auto;
-	padding: 30px;
-}
-
-.phone{
-	width: 200px;
-	height: 30px;
-	padding-left: 10px;
-/*	font-size: 20px;*/
-	color: black;
-	border-radius: 15px 0 0 15px;
-	outline: none;
-}
-
-.define{
-	border-radius:0 15px 15px 0;
-	width: 50px;
-	height: 35px;
-}
-
-input[type=text]:focus{
-	border-color: darkblue;
-	transition: all 0.5s;
-}
-
-
-
-
 
 /*//////////////////////////////////////--=== Cookies styles ===--////////////////////////////////////////*/
 
@@ -67,26 +31,7 @@ input[type=text]:focus{
 	color:#000000;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* /////////////////////////////////////////////// */
+/* /////////////////////////--=== Banner styles ===--//////////////////////// */
 
 @font-face {
     font-family: 'Averta Demo PE';
@@ -105,10 +50,9 @@ input[type=text]:focus{
 }
 
 .block{
-	width: 295px;
     height: 289px;
 	border-radius: 4px;
-	background: #F9F9F9;
+	background: #F9F9F9 !important;
 }
 
 .text-desc{
@@ -131,5 +75,58 @@ input[type=text]:focus{
 	margin-top: 16px;
 }
 
+/* ////////////////////////////--=== Slider styles ===--//////////////////////////// */
 
+.slide-btn{
+	width: 10px !important;
+	height: 10px !important;
+	border-radius: 50%;
+	background-color: #E0E0E0 !important;
+}
 
+.carousel-indicators > .active{
+	background-color: #78599C !important;
+}
+
+.carousel-inner{
+	background: #F9F9F9 !important;
+	width: 80% !important;
+	margin: 0 auto;
+}
+
+.title_mob{
+    width: 80%;
+    margin: 0 auto !important;
+	font-size: 24px;
+	font-weight: 700;
+}
+
+/* ////////////////////////////--=== Media styles ===--//////////////////////////// */
+
+@media (max-width: 1920px) {
+	.banner{
+		display: block;
+	}
+
+	.carousel{
+		display: none;
+	}
+
+	.block{
+		background: #F9F9F9;
+	}
+}
+
+@media (max-width: 991px) {
+	.banner{
+		display: none;
+	}
+
+	.carousel{
+		display: block;
+	}
+
+	.block{
+		background: none;
+	}
+}
