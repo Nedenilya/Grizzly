@@ -1,27 +1,12 @@
 <?php
-		if(!isset($_COOKIE['infoCookies'])) 
-		{	
-			$cookieHtml = "<div id='cookies'>
-								Сайт использует куки
-								<a class='cookieLinks' target='_blank' href='#'>Информация</a>
-								).
-								<a onClick='hideCookie();' class='cookieLinks' href=#>Принять</a>
-								<a onClick='close();' class='cookieClose' href=#>Закрыть</a>
-							</div>";
-			echo $cookieHtml;
-		}
-	
-	?>
-<script type=text/javascript>
-	function close(){
-		document.getElementById("cookies").style.display = "none";	
+	if(!isset($_COOKIE['dont_touch_my_cookies'])) 
+	{	
+		$cookieHtml = "<div id='cookies' class=\"text-center p-3 w-25\">
+							<p>Сайт использует куки</p>
+							<a class='cookieLinks accept_cookie' href=#>Принять</a>
+							<a class='cookieLinks close_popup' href=#>Закрыть</a>
+						</div>";
+		echo $cookieHtml;
 	}
-	
-	function hideCookie(){
-		var CookieDate = new Date;
-		CookieDate.setFullYear(CookieDate.getFullYear( ) +1);
-		document.cookie = 'infoCookies=true; expires=' + CookieDate.toGMTString( ) + ';';
 
-		document.getElementById("cookies").style.display = "none";		
-	}
-</script>
+?>
