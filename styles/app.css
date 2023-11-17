@@ -66,3 +66,70 @@ input[type=text]:focus{
 .cookieLinks:hover{
 	color:#000000;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* /////////////////////////////////////////////// */
+
+@font-face {
+    font-family: 'Averta Demo PE';
+    src: url('fonts/AvertaDemoPE-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.title_text{
+	color: #2E2E2E;
+	font-family: 'Averta Demo PE';
+    font-style: normal;
+	font-size: 40px;
+	font-weight: 600;
+	line-height: 130%;
+}
+
+.block{
+	width: 295px;
+    height: 289px;
+	border-radius: 4px;
+	background: #F9F9F9;
+}
+
+.text-desc{
+	color: #2E2E2E;
+	font-family: 'Averta Demo PE';
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 150%;
+	margin-top: 32px;
+}
+
+.opis{
+	color: #2E2E2E;
+	font-family: 'Averta Demo PE';
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 130%;
+	margin-top: 16px;
+}
+
+
+
