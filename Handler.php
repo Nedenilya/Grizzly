@@ -7,12 +7,6 @@
 		$json = json_decode($data);
 		
 		return $json;
-		// $masks = array();
-
-		// foreach ($json as $val) {
-		// 	array_push($masks, $val->mask);
-		// }
-		// return $masks;
 	}
 
 	if(isset($_POST['phone'])){
@@ -33,18 +27,12 @@
 				$mask = str_replace('#', '', $mask);
 				$reg = '/\([0-9]{1,3}\)/';
 				$arr = array($mask);
-				echo 'Preg: ' . implode(' | ', preg_grep($reg, $arr));
+				// echo 'Preg: ' . implode(' | ', preg_grep($reg, $arr));
 
 				if(substr($phone, 0, strlen($mask)) == $mask){
-					echo "Equals " . $val->name_ru . '; sub: ' . substr($phone, 0, strlen($mask)) . '; mask: ' . $mask;
+					echo "Country: " . $val->name_ru . '; Mask: ' . $val->mask;//substr($phone, 0, strlen($mask));
 					break;
 				}
-				// if(str_contains($phone, $mask)){
-				// 	echo "got it " . $val->name_ru;
-				// 	die();
-				// }else{
-				// 	echo "nope";
-				// }
 			}
 		}	
 	}
