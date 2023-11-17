@@ -6,3 +6,13 @@ $('.define').on('click', function(){
 	    alert(data);
   	});
 });
+
+
+$('.accept_cookie').on('click', function(){
+	$.cookie('dont_touch_my_cookies', 'please', { expires: 1, path: '/', });
+	$('#cookies').css('display', 'none');	
+});
+
+$('.close_popup').on('click', function(){
+	$('#cookies').css('display', 'none');	
+});
